@@ -1,18 +1,17 @@
-<?php
-...
-function traduz_concluida($concluida)
-{
-if ($concluida == 1) {
-return 'Sim';
-}
-return 'Não';
-}
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Gerenciador de Tarefas</title>
+        <link rel="stylesheet" href="tarefas.css" type="text/css" />
+    </head>
+    <body>
+        <h1>Gerenciador de Tarefas</h1>
 
 
-function traduz_concluida($concluida)
-{
-if ($concluida == 1) {
-return 'Sim';
-}
-return 'Não';
-}
+        <?php include('formulario.php'); ?>
+
+
+        <?php if ($exibir_tabela) : ?>
+            <?php include('tabela.php'); ?>
+        <?php endif; ?>
+    </body>
